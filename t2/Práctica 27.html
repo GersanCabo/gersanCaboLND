@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Gersan'>
+    <title>Practica 27</title>
+</head>
+<body>
+    <!--Encabezado de la pagina-->
+    <h3>DATOS PERSONALES</h3><br>
+    <!--Nombre del formulario, email al que se enviaran los datos y metodo que se usa-->
+    <form name="miformulario" action="mailto:gersancabo@gmail.com" method="POST">
+        <!--Entrada del Nombre-->
+        NOMBRE:
+        <input type="text" name="nombre" value="su nombre aquí" size="20" maxlength="20">
+        <br>
+        <!--Entrada del apellido-->
+        APELLIDO:
+        <input type="text" name="ape" value="su apellido aquí" size="50" maxlength="50">
+        <br>
+        <!--Entrada de la Edad-->
+        EDAD:
+        <input type="text" name="edad" size="3" maxlength="2">
+        <br>
+        <!--Boton de Aceptar (Envia el formulario al email)-->
+        <input type="submit" value="ACEPTAR">
+        <!--Boton de Cancelar (Resetea el formulario)-->
+        <input type="reset" value="CANCELAR">
+    </form>
+</body>
+</html>

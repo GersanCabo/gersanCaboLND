@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Gersan'>
+    <title>Intereses</title>
+</head>
+<body bgcolor="#eeeeee">
+    <h3>INTERESES:</h3>
+    <!--Los datos recogidos se enviaran a gersancabo@gmail.com-->
+    <form name="intereses" action="mailto:gersancabo@gmail.com" method="post">
+        <!--La entrada de la contraseña-->
+        CONTRASEÑA DE PERFIL:
+        <input type="password" name="pass" size="20" maxlength="20">
+        <br>
+        <!--La entrada del curso-->
+        CURSO:
+        <input type="text" name="curso" size="50" maxlength="50">
+        <br>
+        <!--
+            Aquí hay una tabla con distintos checkbox que podra
+            marcar el usuario según sus interes
+        -->
+        INTERESES:
+        <br>
+        <table cols=3 raw=2>
+            <tr>
+                <td>
+                    <input type="checkbox" name="informatica" checked>Informática
+                </td>
+                <td>
+                    <input type="checkbox" name="deportes">Deportes
+                </td>
+                <td>
+                    <input type="checkbox" name="salud">Salud
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="politica">Política
+                </td>
+                <td>
+                    <input type="checkbox" name="musica">Música
+                </td>
+                <td>
+                    <input type="checkbox" name="literatura">Literatura
+                </td>
+            </tr>
+        </table>
+        <!--Esta entrada esta oculta al usuario, se trata del nombre del instituto-->
+        <input type="hidden" name="IES" value="Puerto de la Cruz">
+        <hr color="#bbbbbb">
+        <!--Boton de Aceptar-->
+        <input type="submit" value="Aceptar">
+        <!--Boton de Borrar-->
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
