@@ -12,11 +12,11 @@
     <form name="intereses" action="mailto:gersancabo@gmail.com" method="post">
         <!--La entrada de la contraseña-->
         CONTRASEÑA DE PERFIL:
-        <input type="password" name="pass" size="20" maxlength="20">
+        <input type="password" name="pass" size="25" maxlength="25">
         <br>
         <!--La entrada del curso-->
         CURSO:
-        <input type="text" name="curso" size="50" maxlength="50">
+        <input type="text" name="curso" size="40" maxlength="40">
         <br>
         <!--
             Aquí hay una tabla con distintos checkbox que podra
@@ -24,7 +24,7 @@
         -->
         INTERESES:
         <br>
-        <table cols=3 raw=2>
+        <table cols=3 rows=2>
             <tr>
                 <td>
                     <input type="checkbox" name="informatica" checked>Informática
@@ -50,6 +50,39 @@
         </table>
         <!--Esta entrada esta oculta al usuario, se trata del nombre del instituto-->
         <input type="hidden" name="IES" value="Puerto de la Cruz">
+        <hr color="#bbbbbb">
+        Color favorito:
+        <!--
+            Aquí hay una tabla en la que el usuario podra seleccionar su color
+            y estacion del año favorita
+        -->
+        <table cols=4 rows=2 width="480px">
+            <tr>
+                <td>
+                    <input type="radio" name="color" value="rojo"> ROJO
+                </td>
+                <td colspan="2" align="center">
+                    <input type="radio" name="color" value="verde"> VERDE
+                </td>
+                <td>
+                    <input type="radio" name="color" value="azul"> AZUL
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="estacion" value="verano">VERANO
+                </td>
+                <td>
+                    <input type="radio" name="estacion" value="otonio">OTOÑO
+                </td>
+                <td>
+                    <input type="radio" name="estacion" value="invierno">INVIERNO
+                </td>
+                <td>
+                    <input type="radio" name="estacion" value="primavera">PRIMAVERA
+                </td>
+            </tr>
+        </table>
         <hr color="#bbbbbb">
         <!--Boton de Aceptar-->
         <input type="submit" value="Aceptar">

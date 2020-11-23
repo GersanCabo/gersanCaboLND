@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Gersan'>
+    <title>Intereses</title>
+</head>
+<body>
+    <h3>INTERESES:</h3>
+    <form name="intereses" action="mailto:gersancabo@gmail.com" method="post">
+        COLOR DE FONDO FAVORITO:
+        <!--
+            Esta lista tendra la funcion de que el usuario elija
+            su color de fondo favorito
+        -->
+        <select name="color">
+            <option value="negro">Negro</option>
+            <option value="verde">Verde</option>
+            <option value="rojo" selected>Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="blanco">Blanco</option>
+        </select>
+        <hr color=#bbbbbb>
+        INTERESES:
+        <!--
+            Esta lista tendra la funcion de que el usuario seleccione
+            sus intereses (Seleccion Multiple)
+        -->
+        <select name="interes" size="4" multiple>
+            <option value="mascotas">Mascotas</option>
+            <option value="informatica">Informática</option>
+            <option value="literatura">Literatura</option>
+            <option value="salud">Salud</option>
+            <option value="cotilleos">Cotilleos</option>
+            <option value="noticias">Noticias</option>
+        </select>
+        SUCURSALES:
+        <!--
+            Esta lista tendra la funcion de que el usuario seleccione
+            la sucursal que prefiera
+        -->
+        <select name="sucursales" size="7">
+            <optgroup label="Tenerife">
+                <option value="la laguna">La Laguna</option>
+                <option value="puerto de la cruz">Puerto de la Cruz</option>
+                <option value="arona">Arona</option>
+            </optgroup>
+            <optgroup label="El Hierro">
+                <option value="valverde">Valverde</option>
+                <option value="la restinga">La Restinga</option>
+            </optgroup>
+            <optgroup label="La Gomera">
+                <option value="vallehermoso">Vallehermoso</option>
+                <option value="san sebastian">San Sebastián</option>
+            </optgroup>
+            <optgroup label="La Palma">
+                <option value="mazo">Mazo</option>
+                <option value="el paso">El Paso</option>
+                <option value="garafia">Garafía</option>
+            </optgroup>
+        </select>
+        <hr color="#bbbbbb">
+        Introduzca sus comentarios:
+        <br>
+        <!--Area de texto para los comentarios-->
+        <textarea name="comentario" cols="50" rows="3">sus comentarios aquí...</textarea>
+        <hr color="#bbbbbb">
+        <!--Boton de Aceptar-->
+        <input type="submit" value="Aceptar">
+        <!--Boton de Borrar-->
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
