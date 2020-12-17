@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	 
+
+
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/> 
+		<meta name="author" content="gersancabo"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Información sobre el producto - Opera</title>
+    
+        <style type="text/css">
+            /*Los textos “nombre” y “descripción”  aparecen en color verde*/
+            .uno {
+                color: green;
+            }
+
+            /*El input para el nombre y el textarea para descripción
+            aparecen con fondo gris claro y letra azul*/
+            .dos {
+                color: blue;
+                background-color:rgb(241, 239, 239);
+            }
+
+            /*El input para el precio aparece con fondo rojo y letra de tipo
+            Arial 16 negrita*/
+            #tres {
+                background-color: red;
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            /*El texto “descuento 5%” aparece con un borde verde discontinuo de 5 píxeles*/
+            #cuatro {
+                border-style: dashed;
+                border-color: green;
+                border-width: 5px;
+            }
+            /*Regla CSS que consigue que todas las etiquetas legend tengan el color violeta*/
+            legend {
+                color: purple;
+            }
+
+            /*Regla CSS que consigue que todas las etiquetas label tengan el color azul
+            y esten subrayadas*/
+            label {
+                color: blue;
+                text-decoration: underline;
+            }
+        </style>
+	</head>
+   	<body>
+           
+        <h3>Información sobre el producto</h3>
+
+        <fieldset>
+
+            <legend>Datos básicos</legend>
+            <!--Entrada para el nombre-->
+            <span class="uno">Nombre</span>
+            <br/>
+            <input type="text" name="nombre" size="55" class="dos"/>
+            <br/><br/>
+            <!--Entrada para la descripcion-->
+            <span class="uno">Descripción</span>
+            <br/>
+            <textarea cols="67" rows="8" name="descripcion" class="dos"></textarea>
+            <br/><br/>
+            <!--Entrada para la foto-->
+            Foto
+            <input type="text" name="nombre foto"/>
+            <input type="file" name="foto"/>
+            <br/><br/>
+            <!--Seleccionar si desea añadir contador de visitas-->
+            <input type="checkbox" name="contador visitas" id="contador"/>
+            <label for="contador">Añadir contador de vísitas</label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Datos económicos</legend>
+            <table>
+                <tr>
+                    <td style="width:180px">
+                        <!--Entrada del precio-->
+                        Precio
+                        <input type="text" size="3" id="tres"/>
+                        €
+                    </td>
+                    <td>
+                        <!--Seleccion porcentaje impuestos-->
+                        <label for="impuestos">Impuestos</label>
+                        <select name="impuestos" id="impuestos">
+                            <option value="4%">4%</option>
+                            <option value="7%">7%</option>
+                            <option value="16%">16%</option>
+                            <option value="26%">26%</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <!--Seleccion de promocion-->
+            Promoción
+            <br/>
+            <input type="radio" name="promocion" value="ninguno" id="ninguno"/>
+            <label for="ninguno">Ninguno</label>
+            <br/>
+            <input type="radio" name="promocion" value="transporte gratuito" id="trans_gr"/>
+            <label for="trans_gr">Transporte gratuito</label>
+            <br/>
+            <input type="radio" name="promocion" value="descuento 5%" id="desc5"/>
+            <label for="desc5" id="cuatro">Descuento 5%</label>
+
+        </fieldset>
+
+   	</body>
+</html>

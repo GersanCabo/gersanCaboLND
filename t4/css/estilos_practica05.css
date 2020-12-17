@@ -1,0 +1,29 @@
+/*Todos los elementos de la pagina en color verde*/
+* {
+    color: green;
+    text-align: justify;
+}
+
+/*Parrafos y cabeceras nivel 5 en color azul*/
+h5, p {
+    color: blue;
+}
+
+/*Cabeceras nivel 5 con margen izquierdo de 100px*/
+h5 {
+    margin-left: 100px;
+}
+
+/*Cabecera nivel 1 con espaciado entre palabras de 20px*/
+h1 {
+    word-spacing: 20px;
+}
+
+/*Los span dentro de parrafos tachados*/
+p span {
+    text-decoration: line-through;
+}
+
+/*Los span se quedan en color verde, ya que solo se le ha dado el color azul a los h5 y a los p.*/
+/*Para darselo a todos los span que esten dentro de un parrafo deberiamos colocar la respectiva*/
+/*instruccion css en un selector descendente*/

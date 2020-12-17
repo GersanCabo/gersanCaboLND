@@ -1,0 +1,17 @@
+Indica a quién se aplicará estos estilos.
+
+1) a.titulo {...}
+
+    A todos los enlaces que tengan la clase titulo.
+
+2) a .titulo {...}
+
+    A todas las clases titulo que sean hijas de un enlace.
+
+3) a, .titulo {...}
+
+    A todos los enlaces y a todas las clases titulo.
+
+4) p a.titulo {...}
+
+    A todos los enlaces con clase titulo que sean hijos de un parrafo.

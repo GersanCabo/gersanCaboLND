@@ -1,0 +1,18 @@
+Analiza el código y responde ¿Qué hacen las siguientes reglas CSS?
+
+1) table p {text-align: justify}
+
+    Esta regla CSS hace que todo parrafo que sea hijo de una tabla, este justificado.
+
+2) table p a {word-spacing: 10px}
+
+    Esta regla CSS hace que todo enlace que sea hijo de un parrafo que sea hijo de una tabla, tenga un espacio entre palabras de 10px.
+
+3) table, p, a {background-image: gato.gif}
+
+    Esta regla CSS hace  que todas las tablas, parrafos y enlaces, tengan como fondo gato.gif.
+
+4) p * a {border-top: solid 2px green}
+
+    A esta regla CSS no le encuentro mucho sentido, pero viene a decir que: A todo enlace que sea hijo de todo el documento, siendo este ultimo a su vez
+    hijo de un parrafo, aplicarle un borde solido, de 2px de grosor, verde y solamente en la parte superior.

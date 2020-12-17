@@ -1,0 +1,36 @@
+/*Tabla con bordes separados y de 15px*/
+.tabla_principal {
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+/*Define un borde sólido azul oscuro de 1 píxel de ancho y el tamaño de la tabla a 390px*/
+.tabla-borde {
+    border: solid rgb(0, 0, 77) 1px;
+    width: 390px;
+}
+
+/*Color de fondo azul oscuro, color de letra blanco, letra de 16 píxeles y negrita*/
+.cabecera {
+    background-color: rgb(0, 0, 77);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*Color  de  fondo  gris  claro,  color  de  letra  azul  oscuro,  letra  de  12  píxeles
+justificada por ambos lados*/
+.cuerpo {
+    background-color: rgb(148, 148, 148);
+    color: rgb(0, 0, 77);
+    font-size: 12px;
+    text-align: justify;
+}
+
+/*Color  de  fondo  azul  oscuro,  letra  blanca  de  10  píxeles  alineada  a  la  derecha*/
+.pie {
+    background-color: rgb(0, 0, 77);
+    color: white;
+    font-size: 10px;
+    text-align: right;
+}

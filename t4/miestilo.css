@@ -1,0 +1,38 @@
+/*Los textos “nombre” y “descripción”  aparecen en color verde*/
+.uno {
+    color: green;
+}
+
+/*El input para el nombre y el textarea para descripción
+aparecen con fondo gris claro y letra azul*/
+.dos {
+    color: blue;
+    background-color:rgb(241, 239, 239);
+}
+
+/*El input para el precio aparece con fondo rojo y letra de tipo
+Arial 16 negrita*/
+#tres {
+    background-color: red;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*El texto “descuento 5%” aparece con un borde verde discontinuo de 5 píxeles*/
+#cuatro {
+    border-style: dashed;
+    border-color: green;
+    border-width: 5px;
+}
+/*Regla CSS que consigue que todas las etiquetas legend tengan el color violeta*/
+legend {
+    color: purple;
+}
+
+/*Regla CSS que consigue que todas las etiquetas label tengan el color azul
+y esten subrayadas*/
+label {
+    color: blue;
+    text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+Indica a quién se aplicará estos estilos.
+
+1) #contacto, .titulo, a {...}
+
+    Se aplicara a todos los identificadores contacto, a todas las clases titulo y a todos los enlaces.
+
+2) p #contacto {...}
+
+    Se aplicara a todos los identificadores contacto que sean hijos de un parrafo.
+
+3) p#contacto {...}
+
+    Se aplicara a todos los parrafos que tengan el identificador contacto.
+
+4) .aviso .avisoerror {...}
+
+    Se aplicara a todas las clases avisoerror que sean hijas de una clase aviso.
+
+5) div.titulo div.novedad {...}
+
+    Se aplicara a todos los div con la clase novedad que sean hijos de un div con la clase titulo.
+
+6) div.titulo span.urgente {...}
+
+    Se aplicara a todos los span con la clase urgente que sean hijos de un div con la clase titulo.
+
+7) h1 em, h2 em, h3 em {...}
+
+    Se aplicara a todos los em que sean hijos de un h3, de un h2 o de un h1.

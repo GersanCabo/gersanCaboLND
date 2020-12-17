@@ -1,0 +1,51 @@
+/*Tabla con bordes separados y de 15px*/
+.tabla_principal {
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+/*Define un borde sólido lavanda de 1 píxel de ancho y el tamaño de la tabla a 420px*/
+.tabla-borde {
+    border: solid #cc99ff 1px;
+    width: 420px;
+}
+
+/*Color de fondo lavanda, color de letra blanco, letra de 16 píxeles y negrita*/
+.cabecera {
+    background-color: #cc99ff;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*Color  de  fondo  blanco,  color  de  letra  azul  oscuro,  letra  de  12  píxeles
+justificada por ambos lados*/
+.cuerpo {
+    background-color: white;
+    color: rgb(0, 0, 77);
+    font-size: 12px;
+    text-align: justify;
+}
+
+/*Color  de  fondo  lavanda,  letra  blanca  de  10  píxeles  alineada  a  la  derecha*/
+.pie {
+    background-color: #cc99ff;
+    color: white;
+    font-size: 10px;
+    text-align: right;
+}
+
+/*Al pasar con el cursor por encima de un enlace su fondo se vuelve rojo*/
+a:hover {
+    background-color: red;
+}
+
+/*Los enlaces visitados pasan a tener color azul oscuro*/
+a:visited {
+    color: rgb(0, 0, 77);
+}
+
+/*El primer parrafo dentro de la clase .cuerpo tiene una identacion de 60px*/
+.cuerpo > p:first-child {
+    text-indent: 60px;
+}
