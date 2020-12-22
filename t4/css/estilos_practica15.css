@@ -1,0 +1,12 @@
+/*Selector para todas las imagenes de la pagina*/
+img {
+    height: 200px;
+    width: 200px;
+    margin: 150px 200px;
+    border: solid black;
+    padding: 200px;
+    padding-right: 0px;
+}
+
+/*Se pierde el padding izquierdo, por lo que las imagenes dejan de estar*/
+/*centradas respecto al borde y la separacion lateral entre ellas es menor*/

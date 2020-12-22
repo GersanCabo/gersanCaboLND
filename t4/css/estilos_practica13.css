@@ -1,0 +1,7 @@
+/*Selector para todas las imagenes de la pagina*/
+img {
+    height: 200px;
+    width: 200px;
+    margin: 150px 200px;
+    border: solid black;
+}

@@ -14,5 +14,4 @@ Analiza el código y responde ¿Qué hacen las siguientes reglas CSS?
 
 4) p * a {border-top: solid 2px green}
 
-    A esta regla CSS no le encuentro mucho sentido, pero viene a decir que: A todo enlace que sea hijo de todo el documento, siendo este ultimo a su vez
-    hijo de un parrafo, aplicarle un borde solido, de 2px de grosor, verde y solamente en la parte superior.
+    Esta regla CSS hace que a todo enlace que sea hijo no directo de un parrafo se le aplique un borde solido, de 2px de grosor, verde y solamente en la parte superior.

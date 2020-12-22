@@ -1,0 +1,50 @@
+/*Regla CSS que afecta a todos los elementos de la pagina*/
+* {
+    margin: 0px;/*Para eliminar todos los margenes predeterminados*/
+    padding: 0px;/*Para eliminar todos los rellenos predeterminados*/
+    font-weight: bold;
+}
+
+/*Regla CSS qeu afecta a la etiqueta body*/
+body {
+    background-color: lightgray;
+}
+
+/*Regla CSS que afecta a la cabecera*/
+#cabecera {
+    width: 100%;
+    height: 70px;
+    background: url(../imagenes/texture.jpeg) repeat-x;
+    text-align: center;
+    color: black;
+    line-height: 116px;
+}
+
+/*Regla CSS que afecta a todos los div menos al primero*/
+div + div {
+    position: absolute;
+    top: 70px;
+    border: 1px solid black;
+}
+
+/*Regla CSS que afecta a la zona del menu y a la de las novedades*/
+#menu, #novedades {
+    height: 810px;
+    padding-top: 40px;
+    width: calc(20% - 2px);
+    background: url(../imagenes/chromecito.png) no-repeat right bottom;
+}
+
+/*Regla CSS que afecta a la zona donde se ubica el contenido de la pagina*/
+#contenido {
+    height: 730px;
+    width: calc(60% - 120px);
+    left: 20%;
+    padding: 60px;
+    text-align: right;
+}
+
+/*Regla CSS que afecta a la zona de las novedades*/
+#novedades {
+    left: 80%;
+}

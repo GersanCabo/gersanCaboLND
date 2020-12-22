@@ -1,0 +1,27 @@
+/*Regla CSS que afecta a la cabecera*/
+#cabecera {
+    width: 100%;
+    background: url(../imagenes/bg.jpeg) repeat-x;
+    text-align: center;
+}
+
+/*Regla CSS que afecta a todos los div menos al primero*/
+div + div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background: url(../imagenes/chromecito.png) no-repeat;
+}
+
+/*Regla CSS que afecta a la segunda caja*/
+#segunda {
+    background-position: right bottom;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+/*Regla CSS que afecta a la tercera caja*/
+#tercera {
+    background-position: center;
+}

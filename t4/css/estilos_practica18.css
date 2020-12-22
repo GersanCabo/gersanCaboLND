@@ -1,0 +1,15 @@
+/*Reglas CSS de la cabecera de la pagina*/
+#cabecera {
+    background: url(../imagenes/bg.jpeg) repeat-x;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+
+/*Reglas CSS del area lateral para menus*/
+#lateral {
+    width: 200px;
+    height: 500px;
+    background-color: fuchsia;
+    padding-top: 5px;
+}

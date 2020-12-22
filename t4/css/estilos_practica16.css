@@ -1,0 +1,30 @@
+/*El primer párrafo tiene márgenes laterales de 100 píxeles.*/
+body > p:first-child {
+    margin: 0px 100px;
+}
+
+/*El  segundo  párrafo  tiene  bordes  de  3  píxeles  de  color  verde  y  no  tiene  relleno.*/
+body > p:nth-child(2) {
+    border: 3px solid green;
+    padding: 0px;
+}
+
+/*El  tercer  párrafo  tiene  bordes  de  2  píxeles  discontinuos  de  color  azul  los  verticales*/
+/*y amarillo los horizontales.*/
+body > p:nth-child(3) {
+    border: 2px dotted;
+    border-color: yellow blue;
+}
+
+/*El cuarto sólo tiene borde inferior, es negro de 5 píxeles y de estilo groove.*/
+body > p:nth-child(4) {
+    border-bottom: 5px groove black;
+}
+
+/*El  quinto  párrafo  tiene  sólo  200  píxeles  de  ancho  con  un  relleno  de  50  píxeles y un*/
+/*borde fucsia sólido de 2 píxeles.*/
+body > p:nth-child(5) {
+    width: 200px;
+    padding: 50px;
+    border: 2px solid fuchsia;
+}

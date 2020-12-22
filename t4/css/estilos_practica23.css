@@ -1,0 +1,25 @@
+/*Regla CSS que se aplica en el div contenedor*/
+#contenedor {
+    width: 100%;
+    background-image: url(../imagenes/texture.jpeg);
+}
+
+/*Regla CSS que se aplica en todas las imagenes*/
+img {
+    height: 40px;
+}
+
+/*Regla CSS que se aplica en aquellos elementos con la clase anterior*/
+.anterior {
+    float: left;
+}
+
+/*Regla CSS que se aplica en aquellos elementos con la clase siguiente*/
+.siguiente {
+    float: right;
+}
+
+/*Regla CSS que se aplica en aquellos elementos con la clase clear*/
+.clear {
+    clear: both;
+}

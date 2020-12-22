@@ -1,0 +1,4 @@
+/*La imagen de fondo se repite en todas las direcciones*/
+body {
+    background: url(../imagenes/bg.jpeg);
+}
