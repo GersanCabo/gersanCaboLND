@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>Tabla a texto</title>
+		
+		<style type="text/css" >
+
+			/*
+				hay bordes de 3px inset gris
+				y de 10px si pantalla grande
+				fondo:  #83C896
+				segundo fondo ( pantallas pequeñas alumnos pares):  #C58590;
+
+				observar que en pantalla pequeña hay un margin-right en los td
+				Observar que en los :before para pantallas pequeñas hay 
+				que poner la letra en negrita --> font-weight: bold;
+
+
+				la media query se dispara con 800px
+
+
+				¡¡¡¡¡ IMPORTANTE !!!!!!!!
+				Recordar que la forma de que las media-queries funcionen correctamente
+				es sobreescribiendo exactamente todas las reglas. 
+				Ej. 
+				si nosotros tenemos:
+
+				p:nth-of-type(1):hover{  border: 2px solid gray; }
+
+				@media all and (min-width: 300px){
+
+					p:hover{  border: 0px; };
+				}
+
+				Quizás pensemos que como estamos diciendo a todos los párrafos
+				con hover nos quitará el borde ( por cierto, observar que quitamos
+				el borde poniendo uno de ancho 0px )
+				Pero eso no funcionará... ya que la regla anterior es más específica
+
+				SE RECOMIENDA COPIAR EXACTAMENTE TODAS LAS REGLAS QUE ESTÉN FUERA DE LA
+				MEDIA QUERY Y PONERLAS DENTRO TAMBIÉN. PERO MODIFICANDO EL COMPORTAMIENTO
+				DE ESAS REGLAS ( SI FUERA NECESARIO)  De esa manera sabemos 
+				que tienen la misma importancia y sobreescribirán las anteriores
+
+				En el ejemplo anterior sería:
+				p:nth-of-type(1):hover{  border: 2px solid gray; }
+
+				@media all and (min-width: 300px){
+
+					p:nth-of-type(1):hover{  border: 0px; };
+				}
+			*/
+
+			th {
+				display: none;
+			}
+
+			td {
+				display: block;	
+			}
+
+			table {
+				background-color: #83C896;
+				border: 0.2rem solid gray;
+			}
+
+			tr:nth-of-type(2n + 2) {
+				background-color: #C58590;
+			}
+
+			td:nth-of-type(1):before {
+				content: "Nombre: \0000a0";
+				font-weight: bold;
+			}
+
+			td:nth-of-type(2):before {
+				content: "Apellido1: \0000a0";
+				font-weight: bold;
+			}
+
+			td:nth-of-type(3):before {
+				content: "Apellido2: \0000a0";
+				font-weight: bold;
+			}
+
+			td:nth-of-type(4):before {
+				content: "LND: \0000a0";
+				font-weight: bold;
+			}
+
+			td:nth-of-type(5):before {
+				content: "BAE: \0000a0";
+				font-weight: bold;
+			}
+
+			td:nth-of-type(6):before {
+				content: "PRO: \0000a0";
+				font-weight: bold;
+			}
+
+			@media screen and (min-width: 800px) {
+
+				th {
+					display: table-cell;
+				}
+
+				td {
+					display: table-cell;	
+				}
+
+				table {
+					background-color: #83C896;
+					border: 0.7rem outset gray;
+				}
+
+				tr:nth-of-type(2n + 2) {
+					background-color: #83C896;
+				}
+
+				td:nth-of-type(1):before {
+					content: none;
+				}
+
+				td:nth-of-type(2):before {
+					content: none;
+				}
+
+				td:nth-of-type(3):before {
+					content: none;
+				}
+
+				td:nth-of-type(4):before {
+					content: none;
+				}
+
+				td:nth-of-type(5):before {
+					content: none;
+				}
+
+				td:nth-of-type(6):before {
+					content: none;
+				}
+
+			}
+			
+		</style>
+	</head>
+	<body>
+
+		<table border="1px" class="calificaciones">
+			<tr>
+				<th> Nombre</th> <th> Apellido1</th> <th> Apellido2 </th> <th> LND </th> <th> BAE </th> <th> PRO </th>
+			</tr>
+			<tr>
+				<td> María Cristina</td> <td> Martínez</td> <td> Abellanosa</td><td> 8.25 </td> <td> 7.25 </td> <td> 6.25 </td>
+			</tr>
+			<tr>
+				<td> Sara</td> <td> Delgado</td> <td>Alemán </td><td> 9.25 </td> <td> 9.25 </td> <td> 7.25 </td>
+			</tr>
+			<tr>
+				<td> Lidia Ángeles</td> <td> González</td> <td> García</td><td> 9.99 </td> <td> 9.88 </td> <td> 8.25 </td>
+			</tr>
+		</table>
+
+
+	</body>
+</html>
