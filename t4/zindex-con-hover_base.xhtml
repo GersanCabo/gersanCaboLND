@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>Ejercicio ZIndex</title>
+		<style type="text/css" >
+
+			/*
+				letras: georgia, serif, cambria
+				estilo de letra oblique
+				hay un kerning de letra ( buscar la propiedad en Internet) negativo
+				sombra color #494848 asignarle desplazamiento x y además blur
+
+				contenedor: ancho 600, alto 700, fondo gray;
+
+				los h1 están a 120 de distancia del límite superior de su caja
+				y a 30 del límite izquierdo de su caja
+
+				Las cajas tienen un ancho de 200 y una altura de 300. Un grado de opacidad de 80%
+				Al tocarlas grado de opacidad 93%. 
+				la primera caja está a 70 del límite superior del contenedor y otros 80 del límite izquierdo
+				del contenedor. Y así sucesivamente todas, 70 más a la derecha, 70 más abajo
+
+				Se pretende que cuando nos posicionemos
+				encima de una de las cajas se produzcan 
+				cosas peculiares
+
+				En la primera versión ( por eso el 
+				ejercicio se llama z-index ) al usar el hover
+				se usaba la propiedad z-index para que la caja se pusiera encima de las otras y se visionara mejor
+
+				En una segunda versión ( la que está pensada
+				entregar ) se trabaja más bien el selector
+				virgulilla: ~
+				La idea es "ocultar" con visibility:hidden;
+				las cajas que estén después del objeto al
+				que le hemos hecho un hover. 
+				Así, si nos posicionamos sobre la caja2 no
+				se verá ni la caja3, caja4
+				si nos ponemos sobre la caja1 no se 
+				verá ninguna de las otras cajas
+
+
+				tipos de letra: Georgia, serif, Cambria
+				estilo de la letra (font-style): oblique;
+				sombra de texto: #494848;
+				ajustar el letter-spacing para que 
+				se sobrepongan un poco entre ellas
+
+				contenedor: 
+				 fondo gris;
+				 border de tipo outset
+				 Recordar que si queremos que las cajas
+				 se comporten bien con absolute debe
+				 este contenedor tener algún posicionamiento
+				 ( relativo o absoluto )
+
+				cajas:
+				  el border-radius es de 60%
+				  un opacity de 0.80
+				  box-shadow de tipo inset
+
+				los colores de las cajas:
+				#CEAF72;
+				#AF767B;
+				#93A580
+				#8196AD
+
+
+				El texto está rodeado por un borde amarillo
+				Sabemos que eso lo podemos conseguir 
+				mediante cuatro sombras de texto desplazadas
+				un pixel 
+
+			*/
+
+			:root {
+				font-family: georgia, serif, cambria;
+				font-style: oblique;
+				letter-spacing: -0.4em;
+				text-shadow: 1px 1px 5px yellow, -1px -1px 5px yellow, 1px -1px 5px yellow, -1px 1px 5px yellow, 3.5px 8px 3px #494848;
+				--tamañoMargenSuperior: 70px;
+				--tamañoMargenIzquierdo: 80px;
+			}
+
+			body {
+				counter-reset: numeroCaja;
+			}
+
+			.contenedor {
+				width: 600px;
+				height: 700px;
+				background-color: gray;
+				border: 12px outset rgb(143, 143, 143);
+			}
+
+			.caja {
+				position: absolute;
+				width: 200px;
+				height: 300px;
+				border-radius: 60%;
+				opacity: 80%;
+				box-shadow: inset 5px 5px 10px black;
+			}
+
+			.caja:first-of-type {
+				margin-top: var(--tamañoMargenSuperior);
+				margin-left: var(--tamañoMargenIzquierdo);
+				background-color: #CEAF72;
+			}
+
+			.caja:nth-of-type(2) {
+				margin-top: calc(var(--tamañoMargenSuperior) + 70px);
+				margin-left: calc(var(--tamañoMargenIzquierdo) + 70px);
+				background-color: #AF767B;
+			}
+
+			.caja:nth-of-type(3) {
+				margin-top: calc(var(--tamañoMargenSuperior) + (70px * 2));
+				margin-left: calc(var(--tamañoMargenIzquierdo) + (70px * 2));
+				background-color: #93A580;
+			}
+
+			.caja:nth-of-type(4) {
+				margin-top: calc(var(--tamañoMargenSuperior) + (70px * 3));
+				margin-left: calc(var(--tamañoMargenIzquierdo) + (70px * 3));
+				background-color: #8196AD;
+			}
+
+			h1 {
+				margin-top: 140px;
+				margin-left: 30px;
+			}
+
+			h1::after {
+				counter-increment: numeroCaja;
+				content: "--Caja:" counter(numeroCaja, upper-roman) "--";
+			}
+
+			.caja:hover {
+				opacity: 93%;
+			}
+
+			.caja:hover ~ .caja {
+				visibility: hidden;
+			} 
+
+		</style>
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="caja">
+				<h1></h1>
+			</div>
+			<div class="caja">
+				<h1></h1>
+			</div>
+			<div class="caja">
+				<h1></h1>
+			</div>
+			<div class="caja">
+				<h1></h1>
+			</div>
+		</div>			
+	</body>
+</html>

@@ -26,20 +26,40 @@
 				width: 1000px;
 				list-style-type: none;
 				background-color: lightgray;
-				border: 1px solid brown;
+				border: 2px solid brown;
 				border-top-left-radius: 5% 100%;
 				border-bottom-right-radius: 5% 100%;
 			}
 
-			.none > li{
+			li {
+				border: 1.5px solid black;
+			}
+
+			.none > li {
 				display: inline-block;
+				position: relative;
 				vertical-align: top;
 				margin: 0.5% 2%;
-				border: 1px solid black;
 			}
 
 			.none > li > * {
+				visibility: hidden;
 				position: absolute;
+				box-sizing: border-box;
+				width: 100%;
+				color: yellow;
+				text-shadow: -1px -1px 1px black, 1px 1px black, -1px 1px black, 1px -1px black;
+				border-bottom-left-radius: 6% 10%;
+				border-bottom-right-radius: 6% 10%;
+				padding-bottom: 3%;
+			}
+
+			.none > li:hover {
+				background-color: #39DE77;
+			}
+
+			.none > li:hover > * {
+				visibility: visible;
 			}
 
 			.square {
@@ -55,14 +75,6 @@
 			.decimal-leading-zero {
 				list-style-type: decimal-leading-zero;
 				background-color: #5B886B;
-			}
-
-
-
-			@media screen and (min-width: 900px) {
-				
-
-
 			}
 
 		</style>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="author" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Dado con Flex</title>
+        <style type="text/css" >
+
+            /*
+                flex-container: ancho 850px, alto 550px, color de fondo:  #0B610B;
+                cara: ancho 180px, alto 180px    color de fondo #E6E6E6  25px el radio del borde que es de color gris
+                Un padding de 20px
+                circulo: ancho 45px, alto 45px, color de fondo: gray;
+                linear-gradient colores  #2E77BC #0B610B  ( ejemplo de linear-gradient en:
+                http://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear )
+
+
+            */
+
+            .flex-container {
+                width: 850px;
+                height: 550px;
+                background: linear-gradient(#2E77BC, #0B610B);
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .cara {
+                width: 180px;
+                height: 180px;
+                background-color: #E6E6E6;
+                border-radius: 25px;
+                border: 2px solid gray;
+                padding: 20px;
+            }
+
+            .circulo {
+                width: 45px;
+                height: 45px;
+                background-color: gray;
+                border-radius: 100%;
+            }
+
+            .
+
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="cara uno">
+                <div class="circulo"></div>
+            </div>
+
+            <div class="cara dos">
+                <div class="circulo"></div><div class="circulo"></div>
+            </div>
+
+            <div class="cara tres">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+            </div>
+
+            <div class="cara cuatro">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+            </div>
+            <div class="cara cinco">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+                <div class="circulo"></div>
+            </div>
+            <div class="cara seis">
+                <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>
+                <div class="circulo"></div><div class="circulo"></div>
+            </div>
+        </div>
+    </body>
+</html>
