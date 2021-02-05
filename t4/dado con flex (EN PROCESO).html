@@ -31,20 +31,96 @@
             .cara {
                 width: 180px;
                 height: 180px;
+                max-width: 180px;
+                min-height: 180px;
                 background-color: #E6E6E6;
                 border-radius: 25px;
                 border: 2px solid gray;
                 padding: 20px;
+                display: flex;
+                flex-flow: row wrap;
             }
 
             .circulo {
                 width: 45px;
                 height: 45px;
+                max-width: 45px;
+                max-height: 45px;
                 background-color: gray;
                 border-radius: 100%;
             }
 
-            .
+            .uno {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dos {
+                justify-content: space-between;
+            }
+
+            .dos .circulo:nth-of-type(2) {
+                align-self: flex-end;
+            }
+
+            .tres {
+                justify-content: space-between;
+            }
+
+            .tres .circulo:nth-of-type(2) {
+                align-self: center;
+            }
+
+            .tres .circulo:nth-of-type(3) {
+                align-self: flex-end;
+            }
+
+            .cuatro {
+                justify-content: space-between;
+            }
+
+            .cuatro .circulo:nth-of-type(2) {
+                margin-left: 50%;
+            }
+
+            .cuatro .circulo:nth-of-type(n+3) {
+                align-self: flex-end;
+            }
+
+            .cinco {
+                justify-content: space-between;
+            }
+
+            .cinco .circulo:nth-of-type(2) {
+                margin-left: 50%;
+            }
+
+            .cinco .circulo:nth-of-type(3) {
+                align-self: center;
+                margin: 0% 37%;
+            }
+
+            .cinco .circulo:nth-of-type(n+4) {
+                align-self: flex-end;
+            }
+
+
+            .seis {
+                justify-content: space-between;
+            }
+
+            .seis .circulo:nth-of-type(2n-1) {
+                margin-right: 20%;
+            }
+
+            .seis .circulo:nth-of-type(n+3) {
+                align-self: center;
+            }
+
+            .seis .circulo:nth-of-type(n+5) {
+                align-self: flex-end;
+            }
+            
 
         </style>
     </head>
