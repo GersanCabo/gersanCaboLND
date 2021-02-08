@@ -1,0 +1,124 @@
+<!DOCTYPE html >
+<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="author" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>this</title>
+		<style type="text/css" >
+
+
+			/*
+			color de fondo habitual: #E0DFDF 
+			color habitual de letra y objetos: #568968;
+			fondo del formulario: #C7C6C6;
+			el formulario como mínimo un width de: 635px;
+			color usado en los input de texto para la sombra: #6D8F79;
+			Los div con clase flex tienen un width mínimo de 600px
+			Poner las etiquetas (label) en negrita
+
+			Emmet se basó en los selectores css
+			así:  div[nombre=arbol] 
+			nos crea un div con el atributo nombre establecido a arbol:
+			<div nombre="arbol"></div>
+
+
+			Se entiende que los corchetes: []  nos definen
+			atributos. Así el selector de atributos CSS
+			se basa en los corchetes
+
+
+			Usar el selector de atributos para distinguir entre los input de texto del submit ( más información en:
+			http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute ) 
+
+
+
+			Observar que si el input submit si se trata 
+			como elemento de bloque se puede centrar mediante margin: auto;
+		
+
+
+
+			*/
+
+			body {
+				background-color: #E0DFDF;
+			}
+
+			form {
+				background-color: #C7C6C6;
+				width: 635px;
+			}
+
+
+
+
+		</style>
+	</head>
+	<body>
+
+		<h1> Cuestionario </h1>
+		<hr></hr>
+
+		<form action="pagina.php" method="get">
+
+
+		        
+		            <div class="flex">
+		                 <label >Nombre</label>
+		                <input type="text" id="text1" />
+		               
+		            </div>
+		            <div class="flex">
+		                <label >Apellido1 Apellido2</label>
+		                <input type="text" id="text2" />
+		                
+		            </div>
+		            <div class="flex">
+		                 <label >¿Qué intereses tienes?</label>
+		                <input type="text" id="text3" />
+		               
+		            </div>
+		            <div class="flex">
+		                <label >Edad</label>
+		                <input type="text" id="text4" />
+		                
+		            </div>		            
+		            <div class="flex">
+		                 <label >¿En qué trabajas?</label>
+		                <input type="text" id="text5" />
+		               
+		            </div>
+		            <div class="flex">
+		                <label >Correo electrónico</label>
+		                <input type="text" id="text6" />
+		                
+		            </div>		            
+		            <div class="flex">
+		                 <label >Detalla tu formación reglada</label>
+		                <input type="text" id="text7" />
+		               
+		            </div>
+		            <div class="flex">
+		                <label >Otros:</label>
+		                <input type="text" id="text8" />
+		                
+		            </div>
+
+            		<input type="submit" value="Enviar" />
+
+
+
+		</form>
+
+
+
+	</body>
+</html>
+
+
+
+
+
+
