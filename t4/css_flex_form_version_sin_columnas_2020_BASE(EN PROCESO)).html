@@ -48,11 +48,33 @@
 
 			form {
 				background-color: #C7C6C6;
-				width: 635px;
+				min-width: 635px;
+				border: 1px solid white;
+				margin: 2%;
+				box-shadow: 6px 6px 10px black;
+				padding: 2%;
 			}
 
+			.flex {
+				min-width: 600px;	
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				margin-bottom: 2%;
+			}
 
+			label {
+				font-weight: bold;
+			}
 
+			input {
+				flex: 1 0 80%;	
+				margin-left: 1.5%;
+			}
+
+			input[type="submit"] {
+				margin: 0px 50%;
+			}
 
 		</style>
 	</head>
