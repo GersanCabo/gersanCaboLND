@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superponer texto a imagen</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            --anchoarticle: 800px;
+        }
+
+        article {
+            width: var(--anchoarticle);
+            margin: 0px auto;
+        }
+
+        .enlaceimagen {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            width: calc(var(--anchoarticle) - 10%);
+            height: calc(var(--anchoarticle) * 0.5);
+            margin: 0px auto;
+            background-image: url(./imagenes/foto.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-decoration: none;
+            font-family: 'Righteous';
+            font-size: 300%;
+            transition-delay: 0.4s;
+        }
+
+        .bloquetexto {
+            flex: 1 0 100%;
+            visibility: hidden;
+            color: white;
+            background-color: black;
+            opacity: 0.6;
+            text-align: center;
+        }
+
+        .enlaceimagen:hover {
+            background-size: 140%;
+        }
+
+        .enlaceimagen:hover .bloquetexto{
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <a class="enlaceimagen" href="http://www.google.es">
+            <div class="bloquetexto">Leer más</div>
+        </a>
+        <h1>Las vacunas</h1>
+        <p>
+            Una vacuna es una preparación destinada a generar inmunidad adquirida contra una
+            enfermedad estimulando la producción de anticuerpos.1 Normalmente una vacuna
+            contiene un agente que se asemeja a un microorganismo causante de la enfermedad y a
+            menudo se hace a partir de formas debilitadas o muertas del microbio, sus toxinas o una
+            de sus proteínas de superficie
+        </p>
+    </article>
+</body>
+
+</html>
