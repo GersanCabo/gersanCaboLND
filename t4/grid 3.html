@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="juan carlos p.r."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>this</title>
+        <style type="text/css">
+        /* El color de fondo es: #79ACDB */
+        body {
+            background: #79ACDB;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: auto ;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+
+        .titular {
+            grid-area: 1 / 1 / 2 / 2;
+            background: black;
+            color: white;
+            justify-self: self-end;
+            font-weight: bold;
+            width: 40%;
+            padding: 0.5%;
+            margin-top: 1.1%;
+        }
+
+        .contenido {
+            grid-area: 2 / 1 / 3 / 2;
+            background: black;
+            color: white;
+            justify-self: self-end;
+            width: 60%;
+            padding: 0.3%;
+        }
+
+        .fondo {
+            z-index: -1;
+            grid-area: 1 / 1 / 6 / 2;
+        }
+
+        .fondo hr {
+            margin-bottom: 1.1%;
+        }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="grid">
+            <div class="fondo">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                </div>
+                <div class="titular">Titular aquí</div>
+                <div class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem labore qui,
+                    blanditiis corporis quos repellat possimus voluptate quibusdam, voluptatem totam vitae quidem
+                    sapiente rerum minus error quo et facere ducimus.
+                </div>
+            </div>
+    </body>
+
+    </html>

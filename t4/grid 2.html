@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid layout example</title>
+    <style type="text/css">
+
+        .grid {
+            display: grid;
+            grid-gap: 8px;
+            grid-template:
+            "header" 100px
+            "aside" 100px
+            "article" 200px
+            "footer" 100px
+            / 1fr;
+        }
+
+        header, aside, footer {
+            background-color: #0047BB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            color: white;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        article {
+            grid-area: article;
+            background-color: #7E775C;
+            color: #FFD57F;
+            padding: 1%;
+        }
+
+        article > p {
+            margin: 2% 1.5%;
+            text-indent: 30px;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media (min-width: 800px) {
+            .grid {
+                grid-template: 
+                    "header header" 200px
+                    "aside article" 350px
+                    "footer footer" 200px
+                    / 1fr 3fr;
+                grid-gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <header>Header</header>
+        <aside>Aside</aside>
+        <article>
+            <h2>Título artículo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iusto explicabo non quas fuga culpa!
+                Commodi placeat quae debitis libero in, expedita, pariatur.</p>
+        </article>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

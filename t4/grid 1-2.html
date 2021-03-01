@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='gersancabo'>
+    <title>grid 1</title>
+    <style>
+
+        .grid {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            display: grid;
+            grid-template: 
+                "nav nav nav" 100px
+                "section3 . section1" 200px
+                "section3 section2 section2" 200px
+                "footer footer footer" 100px
+                / 1fr 1fr 1fr;
+        }
+
+        nav, section, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 250%;
+            font-weight: bolder;
+        }
+
+        nav {
+            background-color: #3AAF61;
+            grid-area: nav;
+            margin-bottom: 20px;
+        }
+
+        section:nth-of-type(1) {
+            background-color: #EC3A3E;
+            grid-area: section1;
+        }
+
+        section:nth-of-type(2) {
+            background-color: #FF9646;
+            grid-area: section2;
+        }
+
+        section:nth-of-type(3) {
+            background-color: #F39CAD;
+            grid-area: section3;
+        }
+
+        footer {
+            background-color: #008FF6;
+            grid-area: footer;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <nav>Navbar</nav>
+        <section>Section</section>
+        <section>Section</section>
+        <section>Section</section>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
