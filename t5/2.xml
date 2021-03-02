@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE inmobiliaria [
+	<!ELEMENT inmobiliaria (casa+)>
+	<!ELEMENT casa (direccion, propietario*, precio?)>
+	<!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT propietario (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST casa metros CDATA #REQUIRED>
+]>
+
+<inmobiliaria>
+    <casa>
+        <direccion>1</direccion>
+        <propietario></propietario>
+    </casa>
+</inmobiliaria>
+
+<!---->

@@ -6,15 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flex and Grid</title>
     <style>
+        header {
+            background-color: #0047BB;
+            text-align: center;
+            padding: 1% 0px;
+            color: white;
+            margin-bottom: 5px;
+        }
+
         .wrapper {
             display: flex;
             flex-flow: row wrap;
         }
 
         .item {
-            min-width: 210px;
-            width: 1fr;
+            font-size: x-large;
             background: red;
+            flex: auto;
+            margin: 5px 15px;
+            padding: 30px 40px;
+            background-color: deeppink;
+            color: white;
+        }
+
+        .item:nth-of-type(2n) {
+            background-color: olive;
+        }
+
+        .item:nth-of-type(14) {
+            background-color: #ffa0d3;
+        }
+
+        .item:nth-last-of-type(1) {
+            background-color: gray;
         }
 
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE banco [
+    <!--banco>(cuenta[id="$"+interes]*4>saldo)+(cliente[id="$"]*3>nombre+apellidos)+cuenta_cliente[id="$"+idcliente+idcuenta]*5-->
+    <!ELEMENT banco (cuenta+, cliente+, cuenta_cliente*)>
+    <!ELEMENT cuenta (saldo)>
+    <!ELEMENT cliente (nombre, apellidos, id)>
+    <!ATTLIST cuenta interes CDATA
+                    id        ID>
+    <!ATTLIST >
+]>
