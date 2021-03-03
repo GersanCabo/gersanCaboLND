@@ -17,23 +17,45 @@
 		*/
 
 			.galeria {
-				margin: 2% auto;
+				margin: 0 auto;
+				margin-top: 4%;
 				display: grid;
-				grid-gap: 5% 2%;
-				padding: 5%;
+				justify-content: center;
+				align-items: center;
+				grid-gap: 3% 0;
+				grid-template-columns: 1fr;
+				padding-top: 5rem;
+				padding-bottom: 35rem;
 				background-color: lightgray;
 				max-width: 1700px;
 				min-width: 350px;
+				border: 0.5rem inset rgb(228, 228, 228);
 			}
 
 			.galeria > img {
 				max-width: 250px;
-				width: 100%;
+				margin: 0 auto;
 				border: 0.5rem solid white;
-
+				box-shadow: 5px 5px 10px gray;
 			}
 	
+			@media (min-width: 55rem) and (max-width: 88rem) {
+				.galeria {
+					grid-template-columns: repeat(3, 1fr);
+					padding-top: 3.5%;
+					padding-bottom: 14%;
+					grid-gap: 5% 1%;
+				}
+			}
 
+			@media (min-width: 88rem) {
+				.galeria {
+					grid-template-columns: repeat(5, 1fr);
+					padding-top: 3.5%;
+					padding-bottom: 8%;
+					grid-gap: 15% 1%;
+				}
+			}
 
 
 		</style>
