@@ -4,7 +4,13 @@
     <!ELEMENT banco (cuenta+, cliente+, cuenta_cliente*)>
     <!ELEMENT cuenta (saldo)>
     <!ELEMENT cliente (nombre, apellidos, id)>
-    <!ATTLIST cuenta interes CDATA
-                    id        ID>
-    <!ATTLIST >
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT cuenta_cliente (#PCDATA)>
+    <!ATTLIST cuenta id ID CDATA #REQUIRED
+              interes CDATA #IMPLIEd>
+    <!ATTLIST cuenta_cliente id ID #REQUIRED
+                            idcliente IDREF #REQUIRED
+                            idcuenta IDREF #REQUIRED>
 ]>

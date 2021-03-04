@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE concesionario [
+    <!ELEMENT concesionario (modelo*)>
+    <!ELEMENT modelo (#PCDATA | motor | potencia | consumo_medio)*>
+    <!ELEMENT motor (#PCDATA)>
+    <!ELEMENT potencia (#PCDATA)>
+    <!ELEMENT consumo_medio (#PCDATA)>
+    <!ATTLIST modelo id ID #REQUIRED
+                     modelos_relacionados IDREFS #IMPLIED>
+    <!ATTLIST motor modelos_relacionados IDREFS>
+    <!ATTLIST consumo_medio velocidad_km CDATA "0">
+]>
+
+<Concesionario> 
+    <Modelo id="Modelo556">No disponible</Modelo>   
+    <Modelo id="Modelo555" Modelos_relacionados="Modelo444 Modelo556">
+        Este modelo tiene un <Motor Modelos_relacionados="Modelo556">1.998cc 16v. de 
+        cuatro cilindros</Motor> quedesarrolla una potencia de <Potencia>128</Potencia>
+        CV. Dispone de cambio manual ... el consumo medio de este monovolumen es 
+        <Consumo_medio Velocidad_km="100">11</Consumo_medio> a los 100 km. El precio 
+        base es de 2.225.000.    
+    </Modelo>    
+    <Modelo id="Modelo557">No disponible</Modelo>
+    <Modelo id="Modelo154">No disponible</Modelo>
+    <Modelo id="Modelo444" Modelos_relacionados="Modelo555 Modelo154">        
+        Este modelo tiene un <Motor Modelos_relacionados="Modelo556">2.000cc 16v. de 
+        cuatro cilindros</Motor> con<Potencia>128</Potencia> CV. Dispone de cambio 
+        manual ... el consumo medio de este monovolumen es 
+        <Consumo_medio Velocidad_km="100">11</Consumo_medio> a los 100 km. El precio 
+        base es de 2.500.000.    
+    </Modelo>
+</Concesionario>
