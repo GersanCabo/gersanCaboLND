@@ -3,15 +3,16 @@
 	<!ELEMENT inmobiliaria (casa+)>
 	<!ELEMENT casa (direccion, propietario*, precio?)>
 	<!ELEMENT direccion (#PCDATA)>
-    <!ELEMENT propietario (#PCDATA)>
-    <!ELEMENT precio (#PCDATA)>
-    <!ATTLIST casa metros CDATA #REQUIRED>
+	<!ELEMENT propietario (#PCDATA)>
+	<!ELEMENT precio (#PCDATA)>
+	<!ATTLIST casa metros CDATA #REQUIRED>
 ]>
 
 <inmobiliaria>
-    <casa>
+    <casa metros="120">
         <direccion>1</direccion>
-        <propietario></propietario>
+        <propietario>Alberto Rodriguez Armaldo</propietario>
+        <propietario>Elmer Figueroa Arce</propietario>
     </casa>
 </inmobiliaria>
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE cursos [
+	<!ENTITY nn "Juan Luis de Todos los Santos">
+    <!ELEMENT cursos (alumno+, profesor+, curso+, profesor_curso+)>
+    <!ELEMENT curso (#PCDATA)>
+    <!ELEMENT alumno (nombre, apellidos)>
+    <!ELEMENT profesor (nombre, apellidos)>
+    <!ELEMENT profesor_curso EMPTY>
+    <!ELEMENT alumno_curso EMPTY>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ATTLIST alumno  idAlumno ID #REQUIRED>
+    <!ATTLIST profesor idProfesor ID #REQUIRED>
+    <!ATTLIST curso idCurso ID #REQUIRED>
+    <!ATTLIST profesor_curso refCurso IDREF #REQUIRED
+                             		refProfesor IDREF #REQUIRED
+                             		año CDATA #REQUIRED>
+]>
+
+<cursos>
+	<alumno idAlumno="alu04">
+		<nombre>Sofía</nombre>
+		<apellidos>Cáceres</apellidos>
+	</alumno>
+	<profesor idProfesor="prof01">
+		<nombre>&nn;</nombre>
+		<apellidos>Schmidt</apellidos>
+	</profesor>
+	<curso idCurso="cur01">Lenguaje de Marcas</curso>
+	<profesor_curso refCurso="cur01" refProfesor="prof01" año="2016"></profesor_curso>
+</cursos>

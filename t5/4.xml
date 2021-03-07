@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!DOCTYPE concesionario [
-    <!ELEMENT concesionario (modelo*)>
-    <!ELEMENT modelo (#PCDATA | motor | potencia | consumo_medio)*>
-    <!ELEMENT motor (#PCDATA)>
-    <!ELEMENT potencia (#PCDATA)>
-    <!ELEMENT consumo_medio (#PCDATA)>
-    <!ATTLIST modelo id ID #REQUIRED
-                     modelos_relacionados IDREFS #IMPLIED>
-    <!ATTLIST motor modelos_relacionados IDREFS>
-    <!ATTLIST consumo_medio velocidad_km CDATA "0">
+<!DOCTYPE Concesionario [
+    <!ELEMENT Concesionario (Modelo*)>
+    <!ELEMENT Modelo (#PCDATA | Motor | Potencia | Consumo_medio)*>
+    <!ELEMENT Motor (#PCDATA)>
+    <!ELEMENT Potencia (#PCDATA)>
+    <!ELEMENT Consumo_medio (#PCDATA)>
+    <!ATTLIST Modelo id ID #REQUIRED
+                     Modelos_relacionados IDREFS #IMPLIED>
+    <!ATTLIST Motor Modelos_relacionados IDREFS #IMPLIED>
+    <!ATTLIST Consumo_medio Velocidad_km CDATA "0">
 ]>
 
 <Concesionario> 

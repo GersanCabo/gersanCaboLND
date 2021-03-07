@@ -3,14 +3,26 @@
     <!--banco>(cuenta[id="$"+interes]*4>saldo)+(cliente[id="$"]*3>nombre+apellidos)+cuenta_cliente[id="$"+idcliente+idcuenta]*5-->
     <!ELEMENT banco (cuenta+, cliente+, cuenta_cliente*)>
     <!ELEMENT cuenta (saldo)>
-    <!ELEMENT cliente (nombre, apellidos, id)>
-
+    <!ELEMENT cliente (nombre, apellidos)>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT apellidos (#PCDATA)>
-    <!ELEMENT cuenta_cliente (#PCDATA)>
+    <!ELEMENT cuenta_cliente EMPTY>
     <!ATTLIST cuenta id ID CDATA #REQUIRED
-              interes CDATA #IMPLIEd>
+    			interes CDATA #IMPLIED>
+    <!ATTLIST cliente id ID CDATA #REQUIRED>
     <!ATTLIST cuenta_cliente id ID #REQUIRED
-                            idcliente IDREF #REQUIRED
-                            idcuenta IDREF #REQUIRED>
+    				idcliente IDREF #REQUIRED
+    				idcuenta IDREF #REQUIRED>
 ]>
+
+<banco>
+	<cuenta id="1" interes="3%">
+		<saldo>900</saldo>
+	</cuenta>
+	<cliente id="1">
+		<nombre>Carles</nombre>
+		<apellidos>Puigdemont i Casamejó</apellidos>
+	</cliente>
+	<cuenta_cliente id="1" idcliente="1" idcuenta="1"></cuenta_cliente>
+</banco>
+

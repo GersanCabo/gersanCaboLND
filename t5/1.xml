@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sun Mar 07 19:54:24 WET 2021 -->
+
+<!DOCTYPE clases [
+	<!ELEMENT clases (clase+)>
+	<!ELEMENT clase (profesor+, (alumno | alumna)+)>
+	<!ELEMENT profesor (nombre, apellidos?)>
+	<!ELEMENT alumno (nombre, apellidos)>
+	<!ELEMENT alumna (nombre, apellidos)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT apellidos (#PCDATA)>
+	<!ATTLIST clase pizarra (si | no) "si">
+]>
+
+<clases>
+	<clase pizarra="no">
+		<profesor>
+			<nombre>Manolo</nombre>
+		</profesor>
+		<alumna>
+			<nombre>Luisa</nombre>
+			<apellidos>Garcia Perez</apellidos>
+		</alumna>
+	</clase>
+</clases>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sun Mar 07 21:18:57 WET 2021 -->
+
+<!DOCTYPE entrenamiento [
+	<!ELEMENT entrenamiento (cliente+, sesion*)>
+	<!ELEMENT cliente (nombre, apellido1, apellido2)>
+	<!ELEMENT sesion (duracion, distancia, localizacion, comentario*)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT apellido1 (#PCDATA)>
+	<!ELEMENT apellido2 (#PCDATA)>
+	<!ELEMENT duracion (#PCDATA)>
+	<!ELEMENT distancia (#PCDATA)>
+	<!ELEMENT localizacion (#PCDATA)>
+	<!ELEMENT comentario (#PCDATA)>
+	<!ATTLIST cliente id ID #REQUIRED>
+	<!ATTLIST sesion numero_pulsaciones CDATA #IMPLIED
+				id_cliente IDREF #REQUIRED
+				tipo_actividad (running | natacion | bicicleta) "running">
+	<!ATTLIST duracion unidad (minutos | segundos | horas) "minutos">
+	<!ATTLIST distancia unidad (kilometros | millas | vueltas) "kilometros">
+]>
+
+<entrenamiento>
+	<cliente id="A1">
+		<nombre>Elizabeth</nombre>
+		<apellido1>Chase</apellido1>
+		<apellido2>Olsen</apellido2>
+	</cliente>
+	<sesion numero_pulsaciones="120" id_cliente="A1" tipo_actividad="natacion">
+		<duracion>90</duracion>
+		<distancia>8</distancia>
+		<localizacion>La Matanza</localizacion>
+		<comentario>
+			¿Sabes cómo se queda un mago después de comer?
+			Magordito
+		</comentario>
+	</sesion>
+</entrenamiento>
