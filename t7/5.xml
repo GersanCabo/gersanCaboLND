@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sat Mar 20 11:54:27 WET 2021 -->
+
+<persona xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com 5.xsd">
+	<nombre>Maria</nombre>
+	<apellidos>Ruiz</apellidos>
+	<edad>20</edad>
+	<fechanacimiento>2016-06-26</fechanacimiento>
+	<estadocivil>soltero</estadocivil>
+</persona>
+
+<!-- ¿Se obtiene error cuando el valor escrito en el XML no está en la lista? -->
+
+<!-- Sí, se obtiene el siguiente error: -->
+<!-- cvc-enumeration-valid: Value 'pepe' is not valid with respect to enumeration
+'[soltero, casado, separado, divorciado, viudo]'. It must be a value drom the enumeration. -->
+<!-- cvc-type.3.1.3. The value 'pepe' of element 'estadocivil' is not valid. -->

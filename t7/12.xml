@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sat Mar 20 20:06:14 WET 2021 -->
+
+<boletin xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com 12.xsd" evaluacion="1">
+	<nombre>Juan</nombre>
+	<apellidos>González Delgado</apellidos>
+	<nota>8</nota>
+	<materia>Lenguajes de marcas</materia>
+</boletin>
+

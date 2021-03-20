@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sat Mar 20 11:54:27 WET 2021 -->
+
+<persona xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com 6.xsd">
+	<dni>13378217G</dni>
+	<nombre>Maria</nombre>
+	<apellidos>Ruiz</apellidos>
+	<edad>20</edad>
+	<fechanacimiento>2016-06-26</fechanacimiento>
+	<estadocivil>soltero</estadocivil>
+</persona>

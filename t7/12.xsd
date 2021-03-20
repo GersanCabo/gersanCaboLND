@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XSD document created with EditiX XML Editor (http://www.editix.com) at Sat Mar 20 20:11:58 WET 2021 -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.misitio.com" xmlns="http://www.misitio.com" 
+elementFormDefault="qualified">
+
+	<xs:element name="boletin">
+		<xs:complexType mixed="true">
+		
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string"/>
+				<xs:element name="apellidos" type="xs:string"/>
+				<xs:element name="nota" type="xs:positiveInteger"/>
+				<xs:element name="materia" type="xs:string"/>
+			</xs:sequence>
+		
+			<xs:attribute name="evaluacion" type="tipoevaluacion"/>
+			
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:simpleType name="tipoevaluacion">
+		<xs:restriction base="xs:byte">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

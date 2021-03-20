@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sat Mar 20 11:54:27 WET 2021 -->
+
+<persona xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com 3.xsd">
+	<nombre>Maria</nombre>
+	<apellidos>Ruiz</apellidos>
+	<edad>15</edad>
+	<fechanacimiento>2016-06-26</fechanacimiento>
+</persona>
+
+<!-- Después de probar la validación indica que los 18 años es 
+un valor fijo y no por defecto. ¿Qué ocurre si colocas otro dato en edad? -->
+
+<!-- Nos salta un error, ya que estamos intentando asignar un valor diferente a
+un elemento con valor fijo -->
+<!-- El error es: cvc-elt.5.2.2.2.2: The value '15' of element 'edad' does not match 
+the {value constraint} value '18' -->

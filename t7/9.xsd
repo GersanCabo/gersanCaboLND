@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com" xmlns="http://www.misitio.com" elementFormDefault="qualified">
+
+	<xs:element name="compra" type="remesa"></xs:element>
+	
+	<xs:simpleType name="tipoColor">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="blanco"></xs:enumeration>
+			<xs:enumeration value="gris"></xs:enumeration>
+			<xs:enumeration value="rojo"></xs:enumeration>
+			<xs:enumeration value="verde"></xs:enumeration>
+			<xs:enumeration value="azul"></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="datoscoche">
+		<xs:sequence>
+			<xs:element name="marca" type="xs:string"></xs:element>
+			<xs:element name="modelo" type="xs:string"></xs:element>
+			<xs:element name="puertas" type="xs:positiveInteger"></xs:element>
+			<xs:element name="color" type="tipoColor"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="remesa">
+		<xs:complexContent>
+			<xs:extension base="datoscoche">
+				<xs:sequence>
+					<xs:element name="numCoches" type="xs:int"></xs:element>
+					<xs:element name="nombreBarco" type="xs:string"></xs:element>
+					<xs:element name="paisProductor" type="xs:string"></xs:element>
+					<xs:element name="paisComprador" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+
+</xs:schema>

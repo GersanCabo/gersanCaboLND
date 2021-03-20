@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sat Mar 20 18:03:32 WET 2021 -->
+
+<pasaje xsi:schemaLocation="http://www.misitio.com 10.xsd" 
+xmlns="http://www.misitio.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+asiento="18D" ventanilla="false" precio="98.16" moneda="dolares"/>
+
+<!-- Prueba  a  quitar  el  atributo  asiento.  Prueba  a  quitar  el  atributo  precio.  
+Prueba  a quitar el atributo ventanilla. ¿En qué casos da error? -->
+
+<!-- Da error en el atributo asiento, ya que es un atributo obligatorio -->
+
+<!-- No da error al quitar el atributo precio, ya que es un atributo opcional -->
+
+<!-- No da error al quitar el atributo ventanilla, ya que no es un atributo obligatorio y,
+en caso de que no se especifique, se pondra por defecto el valor true -->

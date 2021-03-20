@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Sat Mar 20 17:17:34 WET 2021 -->
+
+<compra xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com 9.xsd">
+	<marca>Toyota</marca>
+	<modelo>LandCruiser</modelo>
+	<puertas>3</puertas>
+	<color>gris</color>
+	<numCoches>100</numCoches>
+	<nombreBarco>SeaAdventurer</nombreBarco>
+	<paisProductor>Japon</paisProductor>
+	<paisComprador>Espania</paisComprador>
+</compra>
