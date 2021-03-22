@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XSD document created with EditiX XML Editor (http://www.editix.com) at Mon Mar 22 18:20:38 WET 2021 -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.misitio.com" xmlns="http://www.misitio.com" 
+elementFormDefault="qualified">
+
+	<xs:element name="persona">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="nombre" type="xs:string"/>
+				<xs:element name="apellido" type="xs:string"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Mon Mar 22 18:21:38 WET 2021 -->
+
+<persona xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com 13.xsd">
+	<apellido></apellido>
+	<nombre></nombre>
+</persona>
+
+<!-- Con la definición de este esquema para el elemento persona 
+prueba que en xml podemos alterar el orden de nombre y apellido sin problemas. -->
+
+<!-- Efectivamente, podemos el alterar el orden de nombre y apellido sin ningun 
+problema, aunque no pueden aparecer más de uno de cada uno -->
