@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Tue Mar 23 15:41:48 WET 2021 -->
+
+<clinicaVeterinaria xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com final.xsd" codigo="A0001">
+	<cliente>
+		<nombre>Alfredo</nombre>
+		<apellido>Exposito</apellido>
+		<animal>
+			<perro sexo="H">
+				<nombre>Firulais</nombre>
+				<edad>9</edad>
+				<raza>Labrador</raza>
+			</perro>
+		</animal>
+	</cliente>
+	<cliente>
+		<nombre>Rosa</nombre>
+		<apellido>Rodriguez</apellido>
+		<animal>
+			<gato>
+				<nombre>Michi</nombre>
+				<edad>3</edad>
+				<raza>Egipcio</raza>
+			</gato>
+		</animal>
+	</cliente>
+	<cliente>
+		<nombre>Pepe</nombre>
+		<apellido>Boukkadour</apellido>
+		<animal>
+			<reptil sexo="M">
+				<nombre>Ratatata</nombre>
+				<edad>14</edad>
+				<raza>Pitón Real</raza>
+			</reptil>
+		</animal>
+	</cliente>
+</clinicaVeterinaria>
