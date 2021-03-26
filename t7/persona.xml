@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Fri Mar 26 10:09:05 WET 2021 -->
+
+<persona xmlns="http://www.misitio.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com persona.xsd">
+	<nombre>Manolo</nombre>
+	<apellido>Perez</apellido>
+	<apellido>Perez</apellido>
+	<edad>13</edad>
+	<padres>
+		<padre>Luis</padre>
+		<padre>Pepe</padre>
+	</padres>
+</persona>

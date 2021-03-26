@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XSD document created with EditiX XML Editor (http://www.editix.com) at Fri Mar 26 09:15:49 WET 2021 -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.misitio.com" xmlns="http://www.misitio.com" 
+elementFormDefault="qualified">
+
+<xs:element name="persona" type="tipoPersona"/>
+
+<xs:complexType name="tipoPersona">
+	<xs:sequence>
+		<xs:element name="nombre" type="xs:string"/>
+		<xs:element name="apellido" type="xs:string" minOccurs="0" maxOccurs="2"/>
+		<xs:choice minOccurs="0">
+			<xs:element name="edad" type="xs:positiveInteger"/>
+			<xs:element name="fechanacimiento" type="xs:date"/>
+		</xs:choice>
+		<xs:element name="padres" type="tipoPadres" minOccurs="0"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoPadres">
+	<xs:choice>
+		<xs:element name="madre" type="xs:string" maxOccurs="2"/>
+		<xs:element name="padre" type="xs:string" maxOccurs="2"/>
+		<xs:sequence>
+			<xs:element name="madre" type="xs:string"/>
+			<xs:element name="padre" type="xs:string"/>
+		</xs:sequence>
+		<xs:sequence>
+			<xs:element name="padre" type="xs:string"/>
+			<xs:element name="madre" type="xs:string"/>
+		</xs:sequence>
+	</xs:choice>
+</xs:complexType>
+
+</xs:schema>
