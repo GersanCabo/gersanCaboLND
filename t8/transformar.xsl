@@ -10,7 +10,7 @@
             <body>
                 <H1>Resultado de la consulta XPATH:</H1>
                 <pre>
-                    <xsl:apply-templates select="...nuestra ruta .../text()"/>
+                    <xsl:apply-templates select="//alumno[@cial='A95M600']/notas/nota"/>
                 </pre>
             </body>
         </html>
