@@ -1,0 +1,12 @@
+/* Generated with EditiX XML Editor (http://www.editix.com) at Fri Apr 09 19:54:42 WEST 2021 */
+
+	nombre {
+		color: red;
+		font-size: 20px;
+		background-color: pink;
+	}
+
+	apellidos {
+		color: green;
+		font-size: 16px;
+	}
