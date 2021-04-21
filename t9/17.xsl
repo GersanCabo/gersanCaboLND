@@ -21,11 +21,11 @@
 	<xsl:template match="curso">
 		<xsl:value-of select="./@nombre"/>
 		<br/>
-		<xsl:apply-templates select="./alumno[./repetidor[text()='False']]"/>
+		<xsl:apply-templates select="./alumno[.//nota &lt; 5 or .//nota = 'No APTO']"/>
 	</xsl:template>
 	
 	<xsl:template match="alumno">
-		<xsl:number count="//alumno[./repetidor[text()='False']]" level="single" format="i "/>
+		<xsl:number value="position()" level="single" format="i "/>
 		<xsl:value-of select="./nombre"/>
 		<xsl:text> </xsl:text>
 		<xsl:text>tiene alguna materia suspensa</xsl:text>

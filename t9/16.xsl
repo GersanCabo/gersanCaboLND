@@ -19,13 +19,15 @@
 	</xsl:template>
 	
 	<xsl:template match="curso">
-		<xsl:number count="//curso" level="single" format="a) "/><xsl:value-of select="./@nombre"/>
+		<xsl:number count="//curso" level="single" format="a) "/>
+		<xsl:value-of select="./@nombre"/>
 		<br/>
 		<xsl:apply-templates select="./alumno"/>
 	</xsl:template>
 	
 	<xsl:template match="alumno">
-		<xsl:number count="//alumno" level="single" format="1) "/><xsl:value-of select="./nombre"/>
+		<xsl:number count="//alumno" level="single" format="1) "/>
+		<xsl:value-of select="./nombre"/>
 		<br/>
 	</xsl:template>
 
