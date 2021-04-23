@@ -39,7 +39,8 @@
 					<th>Nota Media</th>
 				</tr>
 				<xsl:for-each select="//alumno">
-					<xsl:sort select="../@nombre"/>
+					<xsl:sort select="../@nombre" data-type="text"/>
+					<xsl:sort select="sum(.//nota) div count(.//nota)" data-type="number" order="descending"/>
 					<tr>
 						<td rowspan="5" class="numero">
 							<xsl:number value="position()" level="single" format="1"/>
