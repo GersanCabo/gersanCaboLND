@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Hay 9 alumnos</h3>
+      <ol type="1">
+         <li id="A18X111">Javier del curso </li>
+         <li id="A27M242">María del curso </li>
+         <li id="A90R112">Iván del curso </li>
+         <li id="A92T861">Marcos del curso </li>
+         <li id="A92R003">Luis Fernando del curso </li>
+         <li id="A87R122">Elena del curso </li>
+         <li id="A95M600">Irina del curso </li>
+         <li id="A92R543">Genaro del curso </li>
+         <li id="A92R590">Miguel del curso </li>
+      </ol>
+   </body>
+</html>

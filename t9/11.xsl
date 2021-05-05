@@ -32,7 +32,7 @@
 			</tr>
 			<tr>
 			<td>
-				<xsl:value-of select="./nombre">
+				<xsl:value-of select="./nombre">	
 				</xsl:value-of>
 			</td>
 			<td>

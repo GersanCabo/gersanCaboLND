@@ -85,6 +85,7 @@
 				<th>Fecha</th>
 			</tr>
 			<xsl:for-each select=".//examen[contains(.,$mes)]">
+			<xsl:sort select=".[substring(./text(),1,2)]" data-type="number"/>
 				<tr>
 					<td>
 						<xsl:value-of select="../@certificacion"/>
@@ -104,3 +105,5 @@
 	</xsl:template>
 
 </xsl:stylesheet>
+
+
