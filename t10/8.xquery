@@ -10,8 +10,9 @@ xquery version "1.0";
         <h3>Alumnos</h3>
         <table>
 			<tr>
-				<td>Alumno</td>
-				<td>Nació en:</td>
+				<td>Cial</td>
+				<td>Fecha</td>
+				<td>Hora de clase</td>
 			</tr>
 			{
 				for $falta in //falta
