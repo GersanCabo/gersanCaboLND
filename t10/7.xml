@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Cial</td>
+            <td>Fecha</td>
+            <td>Hora de clase</td>
+         </tr>
+         <tr>
+            <td cial="A18X111"/>
+            <td fecha="2011-05-20"/>
+            <td hora="3"/>
+         </tr>
+         <tr>
+            <td cial="A18X111"/>
+            <td fecha="2011-05-20"/>
+            <td hora="4"/>
+         </tr>
+         <tr>
+            <td cial="A18X111"/>
+            <td fecha="2011-05-20"/>
+            <td hora="5"/>
+         </tr>
+         <tr>
+            <td cial="A18X111"/>
+            <td fecha="2011-05-20"/>
+            <td hora="6"/>
+         </tr>
+         <tr>
+            <td cial="A27M242"/>
+            <td fecha="2011-05-08"/>
+            <td hora="2"/>
+         </tr>
+         <tr>
+            <td cial="A27M242"/>
+            <td fecha="2011-05-20"/>
+            <td hora="6"/>
+         </tr>
+         <tr>
+            <td cial="A95M600"/>
+            <td fecha="2011-05-01"/>
+            <td hora="1"/>
+         </tr>
+         <tr>
+            <td cial="A95M600"/>
+            <td fecha="2011-05-01"/>
+            <td hora="2"/>
+         </tr>
+         <tr>
+            <td cial="A95M600"/>
+            <td fecha="2011-05-01"/>
+            <td hora="3"/>
+         </tr>
+         <tr>
+            <td cial="A95M600"/>
+            <td fecha="2011-05-01"/>
+            <td hora="4"/>
+         </tr>
+         <tr>
+            <td cial="A95M600"/>
+            <td fecha="2011-05-01"/>
+            <td hora="5"/>
+         </tr>
+         <tr>
+            <td cial="A95M600"/>
+            <td fecha="2011-05-01"/>
+            <td hora="6"/>
+         </tr>
+         <tr>
+            <td cial="A92R590"/>
+            <td fecha="2011-05-02"/>
+            <td hora="1"/>
+         </tr>
+         <tr>
+            <td cial="A92R590"/>
+            <td fecha="2011-05-02"/>
+            <td hora="6"/>
+         </tr>
+         <tr>
+            <td cial="A92R590"/>
+            <td fecha="2011-05-03"/>
+            <td hora="6"/>
+         </tr>
+      </table>
+   </body>
+</html>

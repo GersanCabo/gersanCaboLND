@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Cial</td>
+            <td>Fecha</td>
+            <td>Hora de clase</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Javier</nombre>
+            </td>
+            <td>
+               <apellidos>Márquez Fernández</apellidos>
+            </td>
+            <td>
+               <asignatura>Lenguajes de marcas</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Javier</nombre>
+            </td>
+            <td>
+               <apellidos>Márquez Fernández</apellidos>
+            </td>
+            <td>
+               <asignatura>Redes</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Javier</nombre>
+            </td>
+            <td>
+               <apellidos>Márquez Fernández</apellidos>
+            </td>
+            <td>
+               <asignatura>Sistemas Operativos</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>María</nombre>
+            </td>
+            <td>
+               <apellidos>Álvarez Pérez</apellidos>
+            </td>
+            <td>
+               <asignatura>Lenguajes de marcas</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>María</nombre>
+            </td>
+            <td>
+               <apellidos>Álvarez Pérez</apellidos>
+            </td>
+            <td>
+               <asignatura>Redes</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>María</nombre>
+            </td>
+            <td>
+               <apellidos>Álvarez Pérez</apellidos>
+            </td>
+            <td>
+               <asignatura>Sistemas Operativos</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Iván</nombre>
+            </td>
+            <td>
+               <apellidos>Rodríguez Pérez</apellidos>
+            </td>
+            <td>
+               <asignatura>Lenguajes de marcas</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Iván</nombre>
+            </td>
+            <td>
+               <apellidos>Rodríguez Pérez</apellidos>
+            </td>
+            <td>
+               <asignatura>Redes</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Iván</nombre>
+            </td>
+            <td>
+               <apellidos>Rodríguez Pérez</apellidos>
+            </td>
+            <td>
+               <asignatura>Sistemas Operativos</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Marcos</nombre>
+            </td>
+            <td>
+               <apellidos>Domínguez</apellidos>
+            </td>
+            <td>
+               <asignatura>Planificación de redes</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Luis Fernando</nombre>
+            </td>
+            <td>
+               <apellidos>Jiménez Pérez</apellidos>
+            </td>
+            <td>
+               <asignatura>Planificación de redes</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Elena</nombre>
+            </td>
+            <td>
+               <apellidos>Ramírez</apellidos>
+            </td>
+            <td>
+               <asignatura>Planificación de redes</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Irina</nombre>
+            </td>
+            <td>
+               <apellidos>Lugo Lugo</apellidos>
+            </td>
+            <td>
+               <asignatura>Análisis</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Irina</nombre>
+            </td>
+            <td>
+               <apellidos>Lugo Lugo</apellidos>
+            </td>
+            <td>
+               <asignatura>Medios</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Genaro</nombre>
+            </td>
+            <td>
+               <apellidos>Hernández Hernández</apellidos>
+            </td>
+            <td>
+               <asignatura>Análisis</asignatura>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Genaro</nombre>
+            </td>
+            <td>
+               <apellidos>Hernández Hernández</apellidos>
+            </td>
+            <td>
+               <asignatura>Medios</asignatura>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

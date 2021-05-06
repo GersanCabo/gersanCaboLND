@@ -21,10 +21,8 @@ xquery version "1.0";
                 let $fechaFalta := $falta/@fecha
                 let $hora := $falta/@hora
                 let $mes := month-from-date($fechaFalta)
-                let $subfecha := substring($cial,2,2)
-                let $fechaNacimiento := number(concat(19,$subfecha))
 
-                where $falta/@tipo = "I" and $mes = 4 and $fechaNacimiento = 1992
+                where $mes = 5
 				return <tr><td>{$cial}</td><td>{$fechaFalta} </td><td>{$hora}</td></tr>
 			}
 

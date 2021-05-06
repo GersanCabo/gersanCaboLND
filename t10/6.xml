@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Alumno</td>
+            <td>Nació en:</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Javier</nombre>
+            </td>
+            <td>1918X</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>María</nombre>
+            </td>
+            <td>1927M</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Iván</nombre>
+            </td>
+            <td>1990R</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Marcos</nombre>
+            </td>
+            <td>1992T</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Luis Fernando</nombre>
+            </td>
+            <td>1992R</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Elena</nombre>
+            </td>
+            <td>1987R</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Irina</nombre>
+            </td>
+            <td>1995M</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Genaro</nombre>
+            </td>
+            <td>1992R</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Miguel</nombre>
+            </td>
+            <td>1992R</td>
+         </tr>
+      </table>
+   </body>
+</html>

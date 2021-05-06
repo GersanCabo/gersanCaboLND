@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Cial</td>
+            <td>Fecha</td>
+            <td>Hora de clase</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Javier</nombre>
+            </td>
+            <td>
+               <apellidos>Márquez Fernández</apellidos>
+            </td>
+            <td>6</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>María</nombre>
+            </td>
+            <td>
+               <apellidos>Álvarez Pérez</apellidos>
+            </td>
+            <td>5.75</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Iván</nombre>
+            </td>
+            <td>
+               <apellidos>Rodríguez Pérez</apellidos>
+            </td>
+            <td>6.25</td>
+         </tr>
+      </table>
+   </body>
+</html>

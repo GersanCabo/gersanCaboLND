@@ -7,8 +7,14 @@
       <h3>Alumnos</h3>
       <table>
          <tr>
-            <td>Alumno</td>
-            <td>Nació en:</td>
+            <td>Cial</td>
+            <td>Fecha</td>
+            <td>Hora de clase</td>
+         </tr>
+         <tr>
+            <td cial="A92T861"/>
+            <td fecha="2011-04-20"/>
+            <td hora="4"/>
          </tr>
       </table>
    </body>
