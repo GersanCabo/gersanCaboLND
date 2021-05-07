@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Alumno</td>
+         </tr>
+         <tr>
+            <td>Javier</td>
+         </tr>
+         <tr>
+            <td>María</td>
+         </tr>
+         <tr>
+            <td>Iván</td>
+         </tr>
+         <tr>
+            <td>Marcos</td>
+         </tr>
+         <tr>
+            <td>Luis Fernando</td>
+         </tr>
+         <tr>
+            <td>Elena</td>
+         </tr>
+         <tr>
+            <td>Irina</td>
+         </tr>
+         <tr>
+            <td>Genaro</td>
+         </tr>
+      </table>
+   </body>
+</html>

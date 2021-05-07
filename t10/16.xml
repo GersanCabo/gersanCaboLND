@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Fecha</td>
+            <td>Numero de comentarios</td>
+         </tr>
+         <tr>
+            <td>2011-05-20</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>2010-11-22</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>2011-04-08</td>
+            <td>7</td>
+         </tr>
+      </table>
+   </body>
+</html>

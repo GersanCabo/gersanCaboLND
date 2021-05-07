@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Alumno</td>
+            <td>Apellido</td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>María</nombre>
+            </td>
+            <td>
+               <apellidos>Álvarez Pérez</apellidos>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Marcos</nombre>
+            </td>
+            <td>
+               <apellidos>Domínguez</apellidos>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Elena</nombre>
+            </td>
+            <td>
+               <apellidos>Ramírez</apellidos>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <nombre>Genaro</nombre>
+            </td>
+            <td>
+               <apellidos>Hernández Hernández</apellidos>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

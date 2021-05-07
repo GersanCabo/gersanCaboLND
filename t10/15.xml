@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Curso</td>
+         </tr>
+         <tr>
+            <td cial="A18X111"/>
+            <td>1</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td cial="A27M242"/>
+            <td>2</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td cial="A90R112"/>
+            <td>2</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td cial="A92T861"/>
+            <td>3</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td cial="A95M600"/>
+            <td>3</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td cial="A92R590"/>
+            <td>1</td>
+            <td>2</td>
+         </tr>
+      </table>
+   </body>
+</html>

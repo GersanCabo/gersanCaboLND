@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>practica 14</title>
+   </head>
+   <body>
+      <h3>Alumnos</h3>
+      <table>
+         <tr>
+            <td>Curso</td>
+         </tr>
+         <tr>
+            <td nombre="2º ASIR"/>
+         </tr>
+      </table>
+   </body>
+</html>
