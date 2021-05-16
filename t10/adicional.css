@@ -1,0 +1,11 @@
+table,td,th {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #9f9f9f ;
+}
+
+h3 {
+    list-style-type: circle black;
+}

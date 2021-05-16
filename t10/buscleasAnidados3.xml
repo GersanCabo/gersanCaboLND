@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>bucles</title>
+   </head>
+   <body>
+      <h2>Ejemplo bucles: caso de primera fila distinta ( por ej. una cabecera)</h2>
+      <h3>garantizamos que se interprete correctamente las líneas afectadas por el return
+		mediante paréntesis </h3>
+      <p>
+			Observar que en el return usamos paréntesis y separamos los elementos
+			mediante comas: ","
+			Esto es: 
+			return (  blabla1, blabla2 )
+		</p>
+      <ul>
+         <h4>Javier</h4>
+         <table border="1">
+            <tr>
+               <td>Lenguajes de marcas</td>
+            </tr>
+            <tr>
+               <td>Redes</td>
+            </tr>
+            <tr>
+               <td>Fundamentos de hardware</td>
+            </tr>
+            <tr>
+               <td>Sistemas Operativos</td>
+            </tr>
+         </table>
+         <h4>María</h4>
+         <table border="1">
+            <tr>
+               <td>Lenguajes de marcas</td>
+            </tr>
+            <tr>
+               <td>Redes</td>
+            </tr>
+            <tr>
+               <td>Fundamentos de hardware</td>
+            </tr>
+            <tr>
+               <td>Sistemas Operativos</td>
+            </tr>
+         </table>
+         <h4>Iván</h4>
+         <table border="1">
+            <tr>
+               <td>Lenguajes de marcas</td>
+            </tr>
+            <tr>
+               <td>Redes</td>
+            </tr>
+            <tr>
+               <td>Fundamentos de hardware</td>
+            </tr>
+            <tr>
+               <td>Sistemas Operativos</td>
+            </tr>
+         </table>
+         <h4>Marcos</h4>
+         <table border="1">
+            <tr>
+               <td>Seguridad Informática</td>
+            </tr>
+            <tr>
+               <td>Planificación de redes</td>
+            </tr>
+            <tr>
+               <td>Servicios web</td>
+            </tr>
+            <tr>
+               <td>Prácticas de empresa</td>
+            </tr>
+         </table>
+         <h4>Luis Fernando</h4>
+         <table border="1">
+            <tr>
+               <td>Seguridad Informática</td>
+            </tr>
+            <tr>
+               <td>Planificación de redes</td>
+            </tr>
+            <tr>
+               <td>Servicios web</td>
+            </tr>
+            <tr>
+               <td>Prácticas de empresa</td>
+            </tr>
+         </table>
+         <h4>Elena</h4>
+         <table border="1">
+            <tr>
+               <td>Seguridad Informática</td>
+            </tr>
+            <tr>
+               <td>Planificación de redes</td>
+            </tr>
+            <tr>
+               <td>Servicios web</td>
+            </tr>
+            <tr>
+               <td>Prácticas de empresa</td>
+            </tr>
+         </table>
+         <h4>Irina</h4>
+         <table border="1">
+            <tr>
+               <td>Programación</td>
+            </tr>
+            <tr>
+               <td>Análisis</td>
+            </tr>
+            <tr>
+               <td>Medios</td>
+            </tr>
+            <tr>
+               <td>Multimedia</td>
+            </tr>
+         </table>
+         <h4>Genaro</h4>
+         <table border="1">
+            <tr>
+               <td>Programación</td>
+            </tr>
+            <tr>
+               <td>Análisis</td>
+            </tr>
+            <tr>
+               <td>Medios</td>
+            </tr>
+            <tr>
+               <td>Multimedia</td>
+            </tr>
+         </table>
+         <h4>Miguel</h4>
+         <table border="1">
+            <tr>
+               <td>Programación</td>
+            </tr>
+            <tr>
+               <td>Multimedia</td>
+            </tr>
+         </table>
+      </ul>
+   </body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>bucles anidados</title>
+   </head>
+   <body>
+      <h2>Ejemplo bucles anidados: caso de expresiones xquery seguidas no necesita poner de nuevo llaves</h2>
+      <p>JavierLenguajes de marcas</p>
+      <p>JavierRedes</p>
+      <p>JavierFundamentos de hardware</p>
+      <p>JavierSistemas Operativos</p>
+      <p>MaríaLenguajes de marcas</p>
+      <p>MaríaRedes</p>
+      <p>MaríaFundamentos de hardware</p>
+      <p>MaríaSistemas Operativos</p>
+      <p>IvánLenguajes de marcas</p>
+      <p>IvánRedes</p>
+      <p>IvánFundamentos de hardware</p>
+      <p>IvánSistemas Operativos</p>
+      <p>MarcosSeguridad Informática</p>
+      <p>MarcosPlanificación de redes</p>
+      <p>MarcosServicios web</p>
+      <p>MarcosPrácticas de empresa</p>
+      <p>Luis FernandoSeguridad Informática</p>
+      <p>Luis FernandoPlanificación de redes</p>
+      <p>Luis FernandoServicios web</p>
+      <p>Luis FernandoPrácticas de empresa</p>
+      <p>ElenaSeguridad Informática</p>
+      <p>ElenaPlanificación de redes</p>
+      <p>ElenaServicios web</p>
+      <p>ElenaPrácticas de empresa</p>
+      <p>IrinaProgramación</p>
+      <p>IrinaAnálisis</p>
+      <p>IrinaMedios</p>
+      <p>IrinaMultimedia</p>
+      <p>GenaroProgramación</p>
+      <p>GenaroAnálisis</p>
+      <p>GenaroMedios</p>
+      <p>GenaroMultimedia</p>
+      <p>MiguelProgramación</p>
+      <p>MiguelMultimedia</p>
+   </body>
+</html>
