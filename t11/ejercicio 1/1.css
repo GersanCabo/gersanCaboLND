@@ -1,0 +1,43 @@
+body {
+    background-color: lightyellow;
+}
+
+h2 {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+}
+
+#container div {
+    padding: 1.5rem;
+    color: gray;
+    border: 1px solid lightgray;
+}
+
+#container div:nth-of-type(1), #container div:nth-of-type(2) {
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 5px gray;
+}
+
+#container div:nth-of-type(3) {
+    background-color: rgb(218, 218, 218);
+}
+
+#container div:last-of-type {
+    color: black;
+}
+
+span {
+    background-color: rgb(240, 240, 240);
+}
+
+button {
+    background-color: antiquewhite;
+    border: 4px outset rgb(230, 230, 230);
+    box-shadow: 1px 1px 2px gray;
+    margin-left: 1%;
+}
