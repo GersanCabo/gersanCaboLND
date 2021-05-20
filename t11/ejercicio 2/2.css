@@ -1,0 +1,9 @@
+table {
+    width: 200px;
+    margin: 2%;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
