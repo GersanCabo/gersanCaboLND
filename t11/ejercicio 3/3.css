@@ -1,0 +1,21 @@
+h2 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 30%;
+    margin: auto auto;
+    gap: 1rem;
+}
+
+.grid > div {
+    border: 1px solid black;
+    padding: 1rem 0.4rem;
+    text-align: center;
+}
+
+.grid > div:nth-last-of-type(1) {
+    grid-area: 4 / 1 / 5 / 4;
+}
