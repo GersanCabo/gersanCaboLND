@@ -9,7 +9,7 @@ let puntuacion = 5;
 function comparar(event) {
     event.target.style.backgroundColor = "red";
     
-    var numElegido = event.target.value;
+    var numElegido = event.target.innerHTML;
     if (numElegido > numOculto) {
         DOM.divPistas.innerHTML = "¡Más abajo!";
         puntuacion--;
