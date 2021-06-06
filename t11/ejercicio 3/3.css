@@ -11,6 +11,7 @@ h2 {
 }
 
 .grid > div {
+    border-radius: 1rem;
     border: 1px solid black;
     padding: 1rem 0.4rem;
     text-align: center;
@@ -18,4 +19,9 @@ h2 {
 
 .grid > div:nth-last-of-type(1) {
     grid-area: 4 / 1 / 5 / 4;
+}
+
+#pistas {
+    margin-top: 1rem;
+    text-align: center;
 }

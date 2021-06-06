@@ -1,4 +1,24 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+    flex-grow: 1rem;
+}
+
+body > * {
+    margin-top: 1rem;
+}
+
+canvas {
+    width: 40%;
+}
+
+input:nth-of-type(1) {
+    width: 1rem;
+    align-self: center;
+}
+
+button {
+    width: 8rem;
+    align-self: center;
 }

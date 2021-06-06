@@ -5,20 +5,25 @@ const DOM = {
 
 let numOculto = parseInt(Math.random() * 10);
 let puntuacion = 5;
+let contador = 0;
+let juegoTerminado = false;
 
 function comparar(event) {
-    event.target.style.backgroundColor = "red";
+    if (juegoTerminado == false) {
+        event.target.style.backgroundColor = "red";
     
-    var numElegido = event.target.innerHTML;
-    if (numElegido > numOculto) {
-        DOM.divPistas.innerHTML = "¡Más abajo!";
-        puntuacion--;
-    } else if (numElegido < numOculto) {
-        DOM.divPistas.innerHTML = "¡Más arriba!";
-        puntuacion--;
-    } else {
-        DOM.divPistas.innerHTML = "¡Has acertado!";
-
+        contador++;
+        var numElegido = event.target.innerHTML;
+        if (numElegido > numOculto) {
+            DOM.divPistas.innerHTML = "¡Más abajo!";
+            puntuacion--;
+        } else if (numElegido < numOculto) {
+            DOM.divPistas.innerHTML = "¡Más arriba!";
+            puntuacion--;
+        } else {
+            DOM.divPistas.innerHTML = "¡Has acertado! Numero de intentos necesarios: " + contador;
+            juegoTerminado = true;
+        }
     }
 }
 
