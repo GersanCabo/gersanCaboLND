@@ -2,8 +2,8 @@ const DOM = {
     canvas: document.getElementById("canvas"),
     btn: document.querySelector("button"),
     npt: document.querySelector("input"),
-    plb: document.querySelector("#plb"),
-    hst: document.querySelector("#hst")
+    plb: document.querySelector("#plb"), //div de la palabra escondida (los guiones)
+    hst: document.querySelector("#hst") //div del historial de palabras usadas por el usuario
 }
 
 DOM.btn.addEventListener("click",comprobarLetraUsuario);
@@ -15,6 +15,7 @@ let intentos = 10;
 let contador = 0; //Contador para dibujar el ahorcado
 let palabraRandom = listaPalabras[Math.floor(Math.random() * listaPalabras.length)]; //Varibale qeu escoge una palabra random del array
 let palabraAdivinar = palabraRandom.split('');//Separa la palabra en letras y lo guarda
+let juegoAcabado = false;
 
 /*
 Aqui, por cada letra de la lista, pone una barra en el array de palabras a mostrar
@@ -37,20 +38,22 @@ function actualizarPantalla() {
  * Funcion que nos permite comprobar si el usuario ha acertado con una letra o no
  */
 function comprobarLetraUsuario() {
-    let letra = DOM.npt.value;
-    DOM.npt.value = '';
-    DOM.npt.focus();
-    for (const [i, letraAdivinar] of palabraAdivinar.entries()) {
-        if (letra == letraAdivinar) {
-            palabraMostrar[i] = letra;
+    if (juegoAcabado == false) {
+        let letra = DOM.npt.value;
+        DOM.npt.value = '';
+        DOM.npt.focus();
+        for (const [i, letraAdivinar] of palabraAdivinar.entries()) {
+            if (letra == letraAdivinar) {
+                palabraMostrar[i] = letra;
+            }
         }
+        if (!palabraAdivinar.includes(letra) && !historial.includes(letra)) {
+            draw();
+            historial.push(letra);
+        }
+        acabar();
+        actualizarPantalla();
     }
-    if (!palabraAdivinar.includes(letra) && !historial.includes(letra)) {
-        draw();
-        historial.push(letra);
-    }
-    acabar();
-    actualizarPantalla();
 }
 
 /**
@@ -59,12 +62,17 @@ function comprobarLetraUsuario() {
 function acabar() {
     if (!palabraMostrar.includes('_')) {
         alert("VICTORIA!!!");
+        juegoAcabado = true;
     }
     if (contador == 11) {
         alert("GAME OVER La palabra era :" + palabraRandom);
+        juegoAcabado = true;
     }
 }
 
+/**
+ * Funcion que se encarga de ir dibujando en el canvas
+ */
 function draw() {
     let ctx = DOM.canvas.getContext('2d');
     let canvasVar = DOM.canvas;
