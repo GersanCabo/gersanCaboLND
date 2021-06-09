@@ -79,6 +79,7 @@ function draw() {
     contador++;
     switch (contador) {
         case 12:
+            //RECORDATORIO: Este case no se utiliza
             contador = 0;
             ctx.clearRect(0,0,DOM.canvas.width,DOM.canvas.height);
             break;
