@@ -23,7 +23,14 @@ function crearCartas() {
         let cartaImpar = numeros[ultimoElemento - 1] + 1;
         numeros.push(cartaImpar);
     }
-    aleatorioArray(numeros);
+    //Bucle que se encarga de mezclar el array
+    for (let i = numeros.length - 1; i > 0; i--) {
+		let indiceAleatorio = Math.floor(Math.random() * (i + 1));
+		let temporal = numeros[i];
+		numeros[i] = numeros[indiceAleatorio];
+		numeros[indiceAleatorio] = temporal;
+	}
+
     //Bucle que inserta un div por cada elemento del array
     for (let i = 0; i < numeros.length; i++) {
         let cartaDiv = document.createElement("div");
