@@ -4,6 +4,8 @@ const DOM = {
 
 let numeroCartas = 9;
 
+crearCartas();
+
 /**
  * Funcion que crea el array e inserta los elementos en el HTML
  */
@@ -18,13 +20,16 @@ function crearCartas() {
     //Condicional en caso de que el numero de cartas sea impar
     if (numeroCartas % 2 != 0) {
         let ultimoElemento = numeros.length;
-        let cartaImpar = numeros[ultimoElemento] + 1;
+        let cartaImpar = numeros[ultimoElemento - 1] + 1;
         numeros.push(cartaImpar);
     }
     aleatorioArray(numeros);
     //Bucle que inserta un div por cada elemento del array
     for (let i = 0; i < numeros.length; i++) {
         let cartaDiv = document.createElement("div");
+        let texto = document.createTextNode(numeros[i]);
+        cartaDiv.appendChild(texto);
+        DOM.scn.appendChild(cartaDiv);
     }
 }
 
@@ -35,4 +40,5 @@ function crearCartas() {
  */
 function aleatorioArray(numeros) {
     numeros.sort(() => Math.random - 0.5);
+    return numeros;
 }
