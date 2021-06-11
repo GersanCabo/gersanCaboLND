@@ -3,6 +3,9 @@ const DOM = {
 }
 
 let numeroCartas = 9;
+let valorCartaAnterior = null;
+let vidas = 10;
+let cartaAnterior = null;
 
 crearCartas();
 
@@ -30,22 +33,38 @@ function crearCartas() {
 		numeros[i] = numeros[indiceAleatorio];
 		numeros[indiceAleatorio] = temporal;
 	}
-
     //Bucle que inserta un div por cada elemento del array
     for (let i = 0; i < numeros.length; i++) {
         let cartaDiv = document.createElement("div");
+        let parrafo = document.createElement("p");
         let texto = document.createTextNode(numeros[i]);
-        cartaDiv.appendChild(texto);
+        parrafo.appendChild(texto);
+        cartaDiv.appendChild(parrafo);
+        cartaDiv.className = "invisible";
         DOM.scn.appendChild(cartaDiv);
+    }
+    aniadirListeners();
+}
+
+function aniadirListeners() {
+    let cartas = document.querySelectorAll("#tabla_parejas > div");
+    for (let i = 0; i < cartas.length; i++) {
+        cartas[i].addEventListener("click",comparar);
     }
 }
 
-/**
- * Funcion que mezcla el array
- * 
- * @param {*} numeros lista a mezclar
- */
-function aleatorioArray(numeros) {
-    numeros.sort(() => Math.random - 0.5);
-    return numeros;
+function comparar(event) {
+    event.target.className = "visible";
+    let valorCarta = event.target.querySelector("p").innerHTML;
+    if (valorCartaAnterior == null) {
+        valorCartaAnterior = valorCarta;
+        cartaAnterior = event.target;
+    } else if (valorCartaAnterior == valorCarta) {
+        
+        cartaAnterior = null;
+        valorCartaAnterior = null;
+    } else {
+        vidas--;
+        event.target.className = "invisible"
+    }
 }
